@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "app.kafka.topics.user-registered",
+      "type": "java.lang.String",
+      "description": "Kafka topic name for user registered events.",
+      "defaultValue": "user.registered.v1"
+    },
+    {
+      "name": "app.kafka.topics.user-registered-dlt",
+      "type": "java.lang.String",
+      "description": "Kafka dead-letter topic for user registered events.",
+      "defaultValue": "user.registered.v1.dlt"
+    }
+  ]
+}

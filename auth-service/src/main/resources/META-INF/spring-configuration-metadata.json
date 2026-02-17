@@ -1,0 +1,27 @@
+{
+  "properties": [
+    {
+      "name": "app.kafka.topics.user-registered",
+      "type": "java.lang.String",
+      "description": "Kafka topic name used to publish USER_REGISTERED events.",
+      "defaultValue": "user.registered.v1"
+    },
+    {
+      "name": "app.outbox.publisher.max-retries",
+      "type": "java.lang.Integer",
+      "description": "Maximum retry count before moving outbox item to FAILED.",
+      "defaultValue": 10
+    },
+    {
+      "name": "app.outbox.publisher.fixed-delay-ms",
+      "type": "java.lang.Long",
+      "description": "Fixed delay in milliseconds for outbox publisher scheduler.",
+      "defaultValue": 2000
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Base64 encoded JWT secret key."
+    }
+  ]
+}

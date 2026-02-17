@@ -1,0 +1,13 @@
+# noinspection KubernetesUnknownValues,YAMLSchemaValidation
+apiVersion: 1
+
+providers:
+  - name: "Microservices Dashboards"
+    orgId: 1
+    folder: ""
+    type: file
+    disableDeletion: false
+    editable: true
+    updateIntervalSeconds: 10
+    options:
+      path: /var/lib/grafana/dashboards
